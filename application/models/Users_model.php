@@ -1,6 +1,7 @@
 <?php
 class Users_model extends CI_Model {
 
+
     public function __construct()
     {
         $this->load->database();
@@ -9,7 +10,7 @@ class Users_model extends CI_Model {
     public function get_user()
     {
         $username = $this->input->post('inputEmail');
-        $query = $this->db->get_where('users', 
+        $query = $this->db->get_where('fo_users', 
           array('username' => $username));
         return $query->row_array();
     }
@@ -25,7 +26,7 @@ class Users_model extends CI_Model {
             'name' => $this->input->post('inputName')
         );
         //insert the data into the db
-        return $this->db->insert('users', $data);
+        return $this->db->insert('fo_users', $data);
     }
 
 }

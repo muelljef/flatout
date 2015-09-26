@@ -25,7 +25,7 @@ class Users extends CI_Controller {
     {
         //if the session is set, then route to landing page
         //o.w. display "home page"
-        if(isset($_SESSION['id'])) {
+        if(isset($_SESSION['user_id'])) {
             redirect(Users::$landingPage);
         } else {
             $head['title'] = "Home";
@@ -43,7 +43,7 @@ class Users extends CI_Controller {
 
         //email must exist and be unique within the db
         //password is required, password again must match password
-        $this->form_validation->set_rules('inputEmail', 'email', 'required|is_unique[users.username]');
+        $this->form_validation->set_rules('inputEmail', 'email', 'required|is_unique[fo_users.username]');
         $this->form_validation->set_rules('inputPassword', 'password', 'required');
         $this->form_validation->set_rules('inputPasswordAgain', 'password', 'required|matches[inputPassword]');
 
@@ -119,7 +119,7 @@ class Users extends CI_Controller {
             {
                 //Set session variables
                 //todo: convert to token system for API implementation (avoid storing user data)
-                $_SESSION['id'] = $user['id'];
+                $_SESSION['user_id'] = $user['user_id'];
                 $_SESSION['email'] = $user['email'];
                 return TRUE;
             }
