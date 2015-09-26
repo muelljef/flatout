@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="<?php echo base_url("../favicon.ico"); ?>"/>
+    <link rel="icon" href="<?php echo base_url("assets/favicon.ico"); ?>"/>
     
     <!-- Abstract to allow changing the title from controller -->
     <title>Flatout - <?php echo $title; ?></title>
@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="<?php echo base_url("../ie-emulation-modes-warning.js"); ?>"></script>
+    <script src="<?php echo base_url("assets/js/ie-emulation-modes-warning.js"); ?>"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
