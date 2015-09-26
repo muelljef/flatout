@@ -58,7 +58,7 @@ $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 */
 
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'users';
 $route['users/register'] = 'users/register';
 $route['users/login'] = 'users/login';
 $route['users'] = 'users';

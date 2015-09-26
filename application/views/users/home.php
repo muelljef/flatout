@@ -1,5 +1,5 @@
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/cover.css"); ?>" />
+    <link rel="stylesheet" href="<?php echo base_url("../cover.css"); ?>" />
   </head>
 
   <body>

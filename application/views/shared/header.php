@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="<?php echo base_url("assets/favicon.ico"); ?>"/>
+    <link rel="icon" href="<?php echo base_url("../favicon.ico"); ?>"/>
     
     <!-- Abstract to allow changing the title from controller -->
     <title>Flatout - <?php echo $title; ?></title>
