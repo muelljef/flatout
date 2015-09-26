@@ -1,2 +1,2 @@
 # flatout
-Task and People management system
+A task management website using CodeIgniter and Bootstrap
