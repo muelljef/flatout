@@ -120,7 +120,7 @@ class Users extends CI_Controller {
                 //Set session variables
                 //todo: convert to token system for API implementation (avoid storing user data)
                 $_SESSION['user_id'] = $user['user_id'];
-                $_SESSION['email'] = $user['email'];
+                $_SESSION['email'] = $user['username'];
                 return TRUE;
             }
             else

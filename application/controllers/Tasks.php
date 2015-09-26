@@ -48,7 +48,6 @@ class Tasks extends CI_Controller {
         $this->load->view('shared/checkLogin');
 
         if($this->tasks_model->add_task()){
-            echo "task successfully added";
             redirect('/tasks');
         } else {
             //todo: display message, form validation?
